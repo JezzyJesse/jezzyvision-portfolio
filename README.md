@@ -1,80 +1,199 @@
-# <p align="center"> My Portfolio Project
-![TypeScript](https://img.shields.io/badge/TypeScript-023e8a?style=for-the-badge&logo=typescript)
-![Next.js](https://img.shields.io/badge/Next.js-14-000000?style=for-the-badge&logo=nextdotjs)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Framer Motion](https://img.shields.io/badge/Framer%20Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
-![image](https://github.com/user-attachments/assets/c7dde192-6716-4b57-887e-dcadf4daa6d5)
+# JezzyVision Portfolio
 
-### Welcome to my portfolio project! This project showcases my skills and experience in web development using modern technologies like Next.js, Tailwind CSS, Framer Motion, and more. 
+## 🎬 Professional Visual Content & Digital Solutions
 
-## Features
+A modern, stylish portfolio website built with **Next.js 14**, **Framer Motion**, and **Tailwind CSS**. Designed for video producers, content creators, and digital strategists to showcase their work with elegant animations and smooth interactions.
 
-- **Animations**: Beautiful animations powered by [Framer Motion](https://www.framer.com/motion/).
-- **Responsive Design**: Built with [Tailwind CSS](https://tailwindcss.com/) for a fully responsive layout.
-- **Easy Navigation**: Smooth scroll and intuitive navigation buttons.
+## ✨ Features
 
+- 🎨 **Modern Design** - Sleek and professional interface with contemporary aesthetics
+- ⚡ **Fast Performance** - Built with Next.js 14 for optimal speed and SEO
+- 🎬 **Video-Ready** - Dedicated section for showcasing video projects and portfolio work
+- 🎯 **Services Showcase** - Display your services (Video Production, Content Creation, Digital Strategy)
+- 📱 **Fully Responsive** - Works perfectly on desktop, tablet, and mobile devices
+- ✨ **Smooth Animations** - Powered by Framer Motion for elegant, physics-based animations
+- 🌙 **Dark/Light Mode** - Built-in theme switching support
+- 📧 **Contact Section** - Easy-to-customize contact form
+- 🎨 **Customizable Colors** - JezzyVision theme with modern color palette (Indigo, Pink, Blue)
+- 🚀 **Production Ready** - Deployed to GitHub Pages with continuous deployment
 
-## Getting Started
-
-Follow these instructions to set up the project locally.
+## 🚀 Quick Start
 
 ### Prerequisites
 
 - Node.js (v14 or later)
-- npm or yarn
+- npm or yarn package manager
 
 ### Installation
 
-1. Clone the repository:
-    ```sh
-    git clone https://github.com/yourusername/portfolio.git
-    ```
-2. Navigate to the project directory:
-    ```sh
-    cd portfolio
-    ```
-3. Install the dependencies:
-    ```sh
-    npm install
-    ```
-    or
-    ```sh
-    yarn install
-    ```
+1. **Clone the repository:**
 
-### Running the Project
+   ```bash
+   git clone https://github.com/JezzyJesse/jezzyvision-portfolio.git
+   cd jezzyvision-portfolio
+   ```
 
-Start the development server:
-    ```
-    npm run dev
-    ```
-    or
-    ```
-    yarn dev
-    ```
+2. **Install dependencies:**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-## Usage
+3. **Run the development server:**
 
-This project includes several components and utilities that you can use and modify to create your own personalized portfolio. Here is an overview of the main files and directories:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-- `components/`: Contains reusable UI components.
-- `app/`: Contains the Next.js app.
-- `public/`: Contains public assets such as images and videos.
-- `lib/`: Contains utility/data.
+4. **Open in your browser:**
 
-## Contributing
+   Visit [http://localhost:3000](http://localhost:3000) to see the development version.
 
-Feel free to fork this repository and submit pull requests. Any contributions, whether it be improvements, bug fixes, or new features, are greatly appreciated!
-Please make sure to read and follow our [Code of Conduct](CODE_OF_CONDUCT.md) and the [Contribution Guidelines](CONTRIBUTE.md) before contributing.
+## 📦 Build & Deployment
 
-## License
+### Building for Production
+
+```bash
+npm run build
+npm run start
+```
+
+### Deployed Site
+
+🌐 **Live Preview**: [https://jezzyjesse.github.io/jezzyvision-portfolio](https://jezzyjesse.github.io/jezzyvision-portfolio)
+
+The site is automatically deployed to GitHub Pages on every push to the main branch.
+
+## 📁 Project Structure
+
+```
+jezzyvision-portfolio/
+├── public/
+│   ├── images/         # Image assets
+│   └── videos/         # Video assets (placeholder)
+├── src/
+│   ├── app/           # Next.js app router pages
+│   ├── common/
+│   │   ├── components/ # Reusable React components
+│   │   ├── lib/       # Data, types, and utilities
+│   │   ├── styles/    # Global CSS styles
+│   │   ├── theme/     # Theme configuration
+│   │   ├── stores/    # State management
+│   │   └── utils/     # Utility functions
+├── package.json       # Project dependencies
+├── next.config.js     # Next.js configuration
+├── tailwind.config.ts # Tailwind CSS configuration
+└── tsconfig.json      # TypeScript configuration
+```
+
+## 🎨 Customization
+
+### Update Portfolio Data
+
+Edit `src/common/lib/data.ts` to customize:
+- Navigation links
+- Services information
+- Videos gallery
+- Contact information
+- Theme colors
+- Animation settings
+
+### Example - Adding a New Service
+
+```typescript
+export const servicesData = [
+  {
+    title: 'Your Service',
+    description: 'Service description',
+    icon: React.createElement(YourIcon),
+  },
+  // ...
+] as const;
+```
+
+### Example - Adding Videos
+
+```typescript
+export const videosData = [
+  {
+    id: 'video-1',
+    title: 'Your Video Title',
+    description: 'Video description',
+    url: 'https://youtube.com/...',
+    thumbnail: 'image-url',
+  },
+  // ...
+] as const;
+```
+
+### Customize Colors
+
+Edit the theme colors in `src/common/lib/data.ts`:
+
+```typescript
+export const themeColors = {
+  primary: '#6366f1',   // Indigo
+  secondary: '#ec4899', // Pink
+  accent: '#3b82f6',    // Blue
+  dark: '#1f2937',      // Dark Gray
+  light: '#f9fafb',     // Light Gray
+} as const;
+```
+
+## 🛠️ Technologies Used
+
+- **Framework**: [Next.js 14](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **UI Components**: [Radix UI](https://www.radix-ui.com/)
+- **Email**: [@react-email](https://react.email/)
+- **Notifications**: [React Hot Toast](https://react-hot-toast.com/)
+- **Hosting**: [GitHub Pages](https://pages.github.com/)
+
+## 📝 Sections Ready to Customize
+
+- ✅ **Hero/Home Section** - First impression with elegant animations
+- ✅ **Services Section** - Showcase your services with detailed descriptions
+- ✅ **Videos Section** - Dedicated gallery for video content
+- ✅ **Contact Section** - Contact form and information
+- ✅ **Navigation** - Easy-to-navigate menu structure
+- ✅ **Theme** - Modern color scheme ready to customize
+- ✅ **Animations** - Smooth, elegant transitions throughout
+
+## 🔄 Continuous Deployment
+
+This repository uses GitHub Actions to automatically build and deploy to GitHub Pages on every push to the main branch.
+
+**Workflow**: `.github/workflows/pages/`
+
+The site will be automatically rebuilt and deployed whenever you push changes.
+
+## 📧 Contact & Support
+
+For questions or support, please contact: **contact@jezzyvision.com**
+
+Or reach out through:
+- 🐦 Twitter: [@jezzyvision](https://twitter.com/jezzyvision)
+- 💼 LinkedIn: [JezzyVision](https://linkedin.com/company/jezzyvision)
+- 📸 Instagram: [@jezzyvision](https://instagram.com/jezzyvision)
+- 📺 YouTube: [@jezzyvision](https://youtube.com/@jezzyvision)
+
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Contact
+## 🙏 Credits
 
-If you want to get in touch, you can reach me at [Maksym Azimov](mailto:azimov.workspace@gmail.com).
+Based on the portfolio template by [bbyc4kes](https://github.com/bbyc4kes/portfolio).
 
-Thank you for checking out my portfolio project!
+Customized and rebranded for **JezzyVision**.
+
+---
+
+**Made with ❤️ by JezzyVision Team** | [Visit Live Site](https://jezzyjesse.github.io/jezzyvision-portfolio)
