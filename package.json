@@ -1,7 +1,9 @@
 {
-  "name": "portfolio",
-  "version": "0.1.0",
+  "name": "jezzyvision-portfolio",
+  "version": "1.0.0",
   "private": true,
+  "description": "Professional portfolio for JezzyVision - Video production, content creation, and digital strategy",
+  "author": "JezzyVision",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
