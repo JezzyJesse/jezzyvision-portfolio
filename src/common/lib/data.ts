@@ -20,6 +20,10 @@ export const links = [
     id: 'services',
   },
   {
+    name: 'Projects',
+    id: 'projects',
+  },
+  {
     name: 'Videos',
     id: 'videos',
   },
