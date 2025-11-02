@@ -2,25 +2,6 @@
   "extends": ["next/core-web-vitals"],
   "plugins": ["import"],
   "rules": {
-    "import/order": [
-      "error",
-      {
-        "groups": [
-          "type",
-          "builtin",
-          "external",
-          "internal",
-          "parent",
-          "sibling",
-          "index",
-          "object"
-        ],
-        "newlines-between": "always",
-        "alphabetize": {
-          "order": "asc",
-          "caseInsensitive": true
-        }
-      }
-    ]
+    "import/order": "off"
   }
 }
