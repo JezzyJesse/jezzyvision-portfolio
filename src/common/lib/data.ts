@@ -42,6 +42,7 @@ export const skillsData = [
 // Experience Data
 export const experiencesData = [
   {
+    icon: BriefcaseBusinessIcon,
     title: 'Senior Developer',
     company: 'Tech Company',
     location: 'Remote',
@@ -49,6 +50,7 @@ export const experiencesData = [
     date: '2022 - Present',
   },
   {
+    icon: BriefcaseBusinessIcon,
     title: 'Front-end Developer',
     company: 'Web Studio',
     location: 'City',
