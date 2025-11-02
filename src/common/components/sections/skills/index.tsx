@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import { skillsData } from "@/common/lib/data";
 import { useSectionInView } from "@/common/lib/hooks";
@@ -24,7 +23,6 @@ const fadeInAnimationVariants = {
 
 export default function Skills() {
   const { ref } = useSectionInView("skills");
-
   return (
     <section
       id="skills"
@@ -45,14 +43,7 @@ export default function Skills() {
             }}
             custom={index}
           >
-            <Image
-              src={skill[1]}
-              alt={skill[0]}
-              width={24}
-              height={24}
-              className="mr-2 inline h-6 w-6"
-            />
-            {skill[0]}
+            {skill.skill}
           </motion.li>
         ))}
       </ul>
