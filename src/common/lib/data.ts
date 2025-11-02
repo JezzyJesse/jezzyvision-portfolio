@@ -12,6 +12,10 @@ export const links = [
     id: 'about',
   },
   {
+    name: 'Skills',
+    id: 'skills',
+  },
+  {
     name: 'Experience',
     id: 'experience',
   },
