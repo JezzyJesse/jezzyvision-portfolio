@@ -25,6 +25,52 @@ export const links = [
   },
 ] as const;
 
+// Skills Data
+export const skillsData = [
+  { skill: 'React' },
+  { skill: 'Next.js' },
+  { skill: 'TypeScript' },
+  { skill: 'JavaScript' },
+  { skill: 'Tailwind CSS' },
+  { skill: 'HTML & CSS' },
+] as const;
+
+// Experience Data
+export const experiencesData = [
+  {
+    title: 'Senior Developer',
+    company: 'Tech Company',
+    location: 'Remote',
+    description: 'Led development of multiple projects',
+    date: '2022 - Present',
+  },
+  {
+    title: 'Front-end Developer',
+    company: 'Web Studio',
+    location: 'City',
+    description: 'Developed responsive web applications',
+    date: '2020 - 2022',
+  },
+] as const;
+
+// Projects Data
+export const projectsData = [
+  {
+    title: 'JezzyVision Portfolio',
+    description: 'Professional portfolio website for video production',
+    technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
+    link: 'https://jezzyvision.com',
+    image: '',
+  },
+  {
+    title: 'Content Management System',
+    description: 'Custom CMS for managing multimedia content',
+    technologies: ['Next.js', 'Node.js', 'MongoDB'],
+    link: '',
+    image: '',
+  },
+] as const;
+
 // Services Data
 export const servicesData = [
   {
