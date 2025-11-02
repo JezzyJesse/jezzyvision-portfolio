@@ -1,6 +1,6 @@
 {
-  "extends": ["next/core-web-vitals", "plugin:prettier/recommended"],
-  "plugins": ["import", "prettier"],
+  "extends": ["next/core-web-vitals"],
+  "plugins": ["import"],
   "rules": {
     "import/order": [
       "error",
@@ -16,7 +16,10 @@
           "object"
         ],
         "newlines-between": "always",
-        "alphabetize": { "order": "asc", "caseInsensitive": true }
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
       }
     ]
   }
